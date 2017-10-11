@@ -5,7 +5,8 @@
   "main": "/server/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "cd server && nodemon server.js"
+    "start": "node ./server/server.js",
+    "dev": "cd server && nodemon server.js"
   },
   "author": "Gegham Samvelyan",
   "license": "ISC",
