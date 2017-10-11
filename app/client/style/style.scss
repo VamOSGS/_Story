@@ -380,6 +380,13 @@ body {
                     }
                   }
                 }
+                div {
+                  &:last-child {
+                    text-align: right;
+                    font-weight: 500;
+                    margin-top: 15px;
+                  }
+                }
               }
               .Like {
                 display: flex;
