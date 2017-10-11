@@ -22955,7 +22955,7 @@ var PostAdding = function (_Component) {
                             ),
                             _react2.default.createElement(
                                 'div',
-                                { className: post.Like.length > 0 ? 'Like active' : 'Like' },
+                                { className: post.Like.length > 0 ? 'Like active' : 'Like ' },
                                 _react2.default.createElement(_Like2.default, { likeList: post.Like, id: post._id }),
                                 _react2.default.createElement(
                                     'div',
