@@ -37,6 +37,7 @@ class App extends React.Component {
         return (
             <div>
                 <div className={'wrap'}>
+
                     {
                         this.props.store.loggedIn ? <LoggedIn/>:
                         <div className={'loggedOut'}>

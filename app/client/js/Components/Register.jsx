@@ -48,7 +48,7 @@ class Register extends Component {
     render() {
         return (
             <form onChange={this.Valid} className={this.state.notValid ? 'notValid' : null} onSubmit={this.Register}>
-                {this.state.notValid ?  <p>You need to fill all<span> fields</span></p>: null}
+                { this.state.notValid ?  <p>You need to fill all<span> fields</span></p>: null }
                 <h1>Registration</h1>
                 <input ref={input => this.Username = input} placeholder={'Username'} type="text"/>
                 <input ref={input => this.FirstName = input} placeholder={'First Name'} type="text"/>

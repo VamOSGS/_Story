@@ -161,7 +161,7 @@ body {
               &:before {
                 content: '';
                 position: absolute;
-                border-radius: 50%;
+                border-radius: 5px;
                 background-color: #269148;
                 top: 0;
                 left: 0;
@@ -194,7 +194,7 @@ body {
             margin: 0 10px ;
             background: none;
             border: none;
-            border-radius: 50%;
+            border-radius: 5px;
             padding: 10px;
             color: #269148;
             font-size: 20px;
@@ -284,7 +284,7 @@ body {
                   cursor: pointer;
                   &.selected {
                     border: 5px solid #bbbbbb;
-                    border-radius: 50%;
+                    border-radius: 5px;
                   }
                 }
               }
@@ -351,7 +351,7 @@ body {
                     &:before {
                       content: '';
                       position: absolute;
-                      border-radius: 50%;
+                      border-radius: 5px;
                       background-color: #269148;
                       top: 0;
                       left: 0;
@@ -487,7 +487,7 @@ body {
                           &:before {
                             content: '';
                             position: absolute;
-                            border-radius: 50%;
+                            border-radius: 5px;
                             background-color: #269148;
                             top: 0;
                             left: 0;
