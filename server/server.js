@@ -5,14 +5,13 @@ const
     db = require('./Utils'),
     app = express();
 
-
 db.listen(app)
 db.setUpConnection();
 
-app.use(express.static('../build/'))
+app.use(express.static('./build/'))
 app.use(BodyParser.json())
 app.get('/', function (req, res) {
-    res.sendFile(path.resolve('../build/index.html'))
+    res.sendFile(path.resolve('./build/index.html'))
 });
 
 app.post('/register', (req, res) => {
