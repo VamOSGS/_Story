@@ -7,7 +7,11 @@ import axios from 'axios';
 class Register extends Component {
     constructor(props) {
         super(props);
-        this.Register = this.Register.bind(this)
+        this.Register = this.Register.bind(this);
+        this.Valid = this.Valid.bind(this);
+        this.state = {
+            notValid: false
+        }
     }
     Register(e) {
         e.preventDefault();
@@ -31,12 +35,20 @@ class Register extends Component {
                 this.LastName.value = null;
             })
         } else {
-            return console.error('invalide')
+            this.setState({
+                notValid: true
+            })
         }
+    }
+    Valid() {
+        this.setState({
+            notValid: false
+        })
     }
     render() {
         return (
-            <form onSubmit={this.Register}>
+            <form onChange={this.Valid} className={this.state.notValid ? 'notValid' : null} onSubmit={this.Register}>
+                {this.state.notValid ?  <p>You need to fill all<span> fields</span></p>: null}
                 <h1>Registration</h1>
                 <input ref={input => this.Username = input} placeholder={'Username'} type="text"/>
                 <input ref={input => this.FirstName = input} placeholder={'First Name'} type="text"/>
